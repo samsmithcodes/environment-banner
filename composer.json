@@ -1,0 +1,35 @@
+{
+    "name": "samsmithcodes/environment-banner",
+    "description": "Display a banner to indicate the current environment.",
+    "keywords": [
+        "laravel"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SamSmithCodes\\EnvironmentBanner\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sam Smith",
+            "email": "sam@keyring.email"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11|^12"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SamSmithCodes\\EnvironmentBanner\\ServiceProvider"
+            ],
+            "aliases": {
+                "EnvironmentBanner": "SamSmithCodes\\EnvironmentBanner\\Facade"
+            }
+        }
+    }
+}
