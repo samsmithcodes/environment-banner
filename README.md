@@ -4,6 +4,8 @@ This package adds a banner to your applications UI to display the current enviro
 
 We have all have a moment where we confuse the environment we are in, maybe you accidentally did something on the production system that should have been done on UAT, or you just want to indicate to end users which environment they are using.
 
+![A screenshot of the environment banner.](Screenshot.png "A screenshot of the environment banner")
+
 ## Assumptions
 
 This package assumes you are using Tailwind for your styling, so out of the box it uses Tailwind classes but of course you can customize this to fit your needs if you publish the view files.
