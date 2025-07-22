@@ -47,7 +47,7 @@ Obviously define the classes you intend to use and then build your assets.
 
 ## Development
 
-To develop the package, you should first setup a clean Laravel project and then create a new directory called `packages`.
+To develop the package, you should first setup a clean Laravel project and then create a new directory called `packages/samsmithcodes/environment-banner`.
 
 Then, checkout this repository into that directory.
 
@@ -63,7 +63,10 @@ To install the package to test, go back to the root of the Laravel project you s
 "repositories": [
     {
         "type": "path",
-        "url": "./packages/samsmithcodes/environment-banner"
+        "url": "./packages/samsmithcodes/environment-banner",
+        "options": {
+            "symlink": true
+        }
     }
 ],
 ```

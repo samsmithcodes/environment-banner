@@ -4,6 +4,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Enabled Switch
+    |--------------------------------------------------------------------------
+    |
+    | This value controls if the environment banner should be shown or not.
+    |
+    */
+
+    'enabled' => (bool) env('ENV_BANNER_ENABLED', true),
+
+    /*
+    |--------------------------------------------------------------------------
     | Current Environment
     |--------------------------------------------------------------------------
     |
@@ -19,11 +30,11 @@ return [
     |--------------------------------------------------------------------------
     |
     | These options control the color of the banner, they should be Tailwind
-    | classes, dark class definitions do not need 'dark:', this will be 
+    | classes, dark class definitions do not need 'dark:', this will be
     | prefixed in the code.
     |
     */
-    
+
     'colors' => [
         'bg' => env('ENV_BANNER_BG_COLOR_CLASS', 'bg-black'),
         'bg_dark' => env('ENV_BANNER_BG_DARK_COLOR_CLASS', 'bg-white'),
